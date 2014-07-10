@@ -5,33 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:700' rel='stylesheet' type='text/css'>
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <hgroup>
+        <h1>Gabbys Dull Site</h1>
+    </hgroup>
+    <nav class="navbar">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Recipe App", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/">RECIPES</a></li>
+                    <li><a href="/">HOUSEKEEPING</a></li>
+                    <li><a href="/">DECOR</a></li>
+                    <li><a href="/">GARDENING</a></li>
+                    <li><i class="fa fa-search fa-2x"></i></li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                
             </div>
-        </div>
-    </div>
+    </nav>
+    
+    
+    @RenderBody()
+        
     <div class="container body-content">
-        @RenderBody()
-        <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            @Html.Partial("_LoginPartial")
         </footer>
     </div>
 

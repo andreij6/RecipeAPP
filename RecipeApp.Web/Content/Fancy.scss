@@ -1,0 +1,60 @@
+﻿@import "Colors.scss";
+html, body {
+    height: 100%;
+}
+
+body {
+    background: $offWhite;
+}
+
+.nav li, .navbar-nav li {
+    padding: 0;
+    border-top: #f5f0f0 2px solid;
+
+    i {
+        padding-top: 10px;
+    }
+
+    &:hover {
+        border-top: $muteMaroon 2px solid;
+        margin-top: -2px;
+        color: $muteMaroon;
+    }
+
+    a {
+        font-family: 'Oxygen', sans-serif;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: transparent;
+            color: $muteMaroon;
+        }
+    }
+}
+
+hgroup {
+    text-align: center;
+}
+
+.board {
+    width: 100%;
+    height: 70%;
+    div {
+        height: 100%;
+        background-color: $briPurp;
+    }
+
+    //Make mixin right here
+    .first {
+        background: url("Images/apple-5880_640.jpg") no-repeat;
+        background-size: 100%;
+    }
+    .second {
+        background: url("Images/orange-juice-67556_640.jpg") no-repeat;
+        background-size: 100%;
+    }
+    .third {
+        background: url("Images/pizza-366111_640.jpg") no-repeat;
+        background-size: 100%;
+    }
+}

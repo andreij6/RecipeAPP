@@ -186,10 +186,27 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Colors.css">
+      <DependentUpon>Colors.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Colors.min.css">
+      <DependentUpon>Colors.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Fancy.css">
+      <DependentUpon>Fancy.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Fancy.min.css">
+      <DependentUpon>Fancy.css</DependentUpon>
+    </Content>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Images\apple-5880_640.jpg" />
+    <Content Include="Content\Images\orange-juice-67556_640.jpg" />
+    <Content Include="Content\Images\pizza-366111_640.jpg" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.js" />
@@ -200,6 +217,18 @@
     <Content Include="Scripts\errors.json" />
     <Content Include="Scripts\angular-route.min.js.map" />
     <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Content\Fancy.scss" />
+    <Content Include="Content\Colors.scss" />
+    <Content Include="Content\Colors.css.map">
+      <DependentUpon>Colors.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Fancy.css.map">
+      <DependentUpon>Fancy.css</DependentUpon>
+    </Content>
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Factories\WebAPI.js" />
     <Content Include="Scripts\i18n\angular-locale_af-na.js" />
